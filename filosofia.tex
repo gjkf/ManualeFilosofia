@@ -16,11 +16,11 @@
 \usepackage{cancel} % Cacelled equations and simplifications
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    urlcolor=black,
-    linkcolor=blue
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  urlcolor=black,
+  linkcolor=blue
 }
 
 \usepackage[showframe=false, top=2cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
@@ -43,7 +43,7 @@
   \setbox0=\hbox{$\oldr@@t#1{#2\,}$}\dimen0=\ht0
   \advance\dimen0-0.2\ht0
   \setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
-  {\box0\lower0.4pt\box2}}
+{\box0\lower0.4pt\box2}}
 \LetLtxMacro{\oldsqrt}{\sqrt}
 \renewcommand*{\sqrt}[2][\ ]{\oldsqrt[#1]{#2} }
 \makeatother
@@ -54,7 +54,7 @@
   \edef\arraystretch{#1}%
   \hskip -\arraycolsep
   \let\@ifnextchar\new@ifnextchar
-  \array{*\c@MaxMatrixCols c}}
+\array{*\c@MaxMatrixCols c}}
 \makeatother
 
 \newcommand\twodigits[1]{%
@@ -85,18 +85,18 @@
   \path[name path=line one] (#2) -- (#3);
   \path[name path=line two] (#2) -- (#4);
   \path[%
-    name intersections={of=line one and circle, by={inter one}},
-    name intersections={of=line two and circle, by={inter two}}
+  name intersections={of=line one and circle, by={inter one}},
+  name intersections={of=line two and circle, by={inter two}}
   ] (inter one) -- (inter two) coordinate[pos=.5] (middle);
   % put mark
   \node at ($(#2)!#6!(middle)$) {#7};
 }
 \def\mathcolor#1#{\@mathcolor{#1}}
 \def\@mathcolor#1#2#3{%
-      \protect\leavevmode
-      \begingroup
-      \color#1{#2}#3%
-      \endgroup
+  \protect\leavevmode
+  \begingroup
+  \color#1{#2}#3%
+  \endgroup
 }
 % For better visual in tables
 \renewcommand*{\arraystretch}{2}
@@ -106,8 +106,8 @@
 
 \begin{document}
 {
-\hypersetup{linkcolor=black}
-\tableofcontents
+  \hypersetup{linkcolor=black}
+  \tableofcontents
 }
 
 \input{schopenhauer}
@@ -124,6 +124,7 @@
 \input{darwin}
 \input{spencer}
 \input{nietsche}
+\input{freud}
 
 \newpage
 \listoftodos[Note]
