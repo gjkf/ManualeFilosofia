@@ -15,7 +15,7 @@
 \usepackage{multicol}
 \usepackage{cancel} % Cacelled equations and simplifications
 \usepackage{hyperref}
-\hypersetup{
+\hypersetup{%
   colorlinks,
   citecolor=black,
   filecolor=black,
@@ -70,7 +70,7 @@
 \fancyfoot[C,CO]{\thepage}% page number in "outer" position of footer line
 \fancyfoot[R,RO]{Copyright \copyright 2017--\the\year$\,$Cossu Davide
 } % other info in "inner" position of footer line
-\fancyfoot[L,LO]{Version 0.1.2 \today
+\fancyfoot[L,LO]{Version 1.0.0 \today
 }
 \DeclarePairedDelimiter\norm{\lVert}{\rVert} % ||v||  
 \DeclarePairedDelimiter\abs{\lvert}{\rvert} % |v|
@@ -105,7 +105,7 @@
 \newcommand{\divisor}{\rule{8.7cm}{0.4pt}}
 
 \begin{document}
-{
+{%
   \hypersetup{linkcolor=black}
   \tableofcontents
 }
@@ -130,7 +130,8 @@
 \input{rosselli}
 \input{maritain}
 \input{schumpeter}
+\input{rawls}
 
-\newpage
-\listoftodos[Note]
+%\newpage
+%\listoftodos[Note]
 \end{document}
